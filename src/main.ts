@@ -59,8 +59,7 @@ const goAround = (options: IOptions) => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  // const nextYear = '2025-01-01T00:00:00'
-  const nextYear = '2024-12-23T00:13:00'
+  const nextYear = '2025-01-01T00:00:00'
   var tzoffset = (new Date()).getTimezoneOffset() * 60000
   var localISOTime = (new Date(Date.now() - tzoffset)).toISOString().slice(0, -1)
   const untilDate = localISOTime >= nextYear ? new Date().getTime() + 4000 : new Date(nextYear).getTime()
@@ -90,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
     anime({
-      targets: '.shape',
+      targets: 'img.shape',
       opacity: 1,
       delay: anime.stagger(200),
     })
