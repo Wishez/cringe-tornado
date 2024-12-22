@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  admin:
+    restart: always
+    build:
+      context: ./
+    entrypoint: [ "nginx", "-g", "daemon off;" ]
+    ports:
+      - 5174:80
+
