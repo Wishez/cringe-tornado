@@ -20,6 +20,25 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.disclamer {
+  font-size: 80px;
+  padding: 20px 20px 90px;
+  margin: 100px auto;
+  font-weight: bold;
+  text-align: center;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+main, h1 {
+  @media (max-width: 1023px) {
+    display: none !important;
+  }
+}
+
 body {
   display: flex;
   flex-direction: column;

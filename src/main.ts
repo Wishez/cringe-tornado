@@ -1,7 +1,5 @@
 import './style.css'
 import anime from 'animejs'
-//@ts-ignore
-// import * as FlipDown from 'flipdown'
 
 const StoppedAnimation: Record<string, boolean> = {}
 
